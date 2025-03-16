@@ -83,6 +83,7 @@ Each piece listed above is individually implemented into a navigation task allow
  - Implementing Bluetooth: Since there was no common structure for how to incorporate Bluetooth communicaiton, finding the path to successful wireless instruction took many hours of trial and error to find the right baurate and UART channel.
  - **IMU Noise:** Implemented filtering to stabilize heading readings.
  - **Task Timing:** Optimized scheduling to ensure real-time response.
+ - Implementing Voltage Divider: Did not have enough time to write the code to read the voltage readings directly from the batteries and incorporate this into a motor effort.
 
 
 # Red Carpet
@@ -129,7 +130,7 @@ Each piece listed above is individually implemented into a navigation task allow
 ├── main.py
 └── README.md
 ```
-- GitHub Repository URL: **[Link Here](#)**
+- GitHub Repository URL: (https://github.com/LucaSlade/ME405-Romulus.git)
 
 ---
 **Developers:** Luca Sladavic & Aiden Theocheung 
