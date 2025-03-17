@@ -177,27 +177,6 @@ Each piece listed above is individually implemented into a navigation task allow
 - **MicroPython** installed on Nucleo board.
 - **GitHub Pages / ReadTheDocs** for documentation.
 
-# **Project Repository Structure**
-```
-/
-├── EncoderDriver.py
-├── Task_BumpSensor.py
-├── PIDController.py
-├── Driver_Motors.py
-├── Task_MotorController.py
-├── BNO055_Driver.py
-├── LinesensorDriver.py
-├── Task_LineFollower.py
-├── UI.py
-├── PreProgPath.py
-├── cotask.py
-├── Thinker.py
-├── task_share.py
-├── BNO055_Task.py
-├── cqueue.py
-├── boot.py
-├── main.py
-└── README.md
 ```
 - GitHub Repository URL:
   
