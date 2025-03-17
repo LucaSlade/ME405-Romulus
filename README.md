@@ -92,7 +92,9 @@ Each piece listed above is individually implemented into a navigation task allow
 
 
 # **Video Demonstration**
-[📹 Click Here to Watch the Robot in Action](#) *(Replace with actual video link)*
+[📹 Click Here to Watch the Robot in Action](https://www.youtube.com/watch?v=LcPKkkXOCas)
+
+
 
 # **How to Run the Project**
 1. Clone this repository:  
