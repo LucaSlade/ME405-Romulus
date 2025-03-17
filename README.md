@@ -96,16 +96,19 @@ Each piece listed above is individually implemented into a navigation task allow
 <img width="1199" alt="PNG image" src="https://github.com/user-attachments/assets/ce47362c-863d-499f-821f-1660cbe8d39f" />
 
 
- - **S0_STANDBY:** Wait for user input. 
- - **S1_LINE_FOLLOW:** Follow the track using sensor data.
- - **S2_STRAIGHT_DRIVE:** Move in a set direction.
- - **S3_LINE_FOLLOW:** Follow the track using sensor data.
- - **S5_TURN_TO_HEADING:** Turn to a set direction.
- - **S6_STRAIGHT_DRIVE:** Move in a set direction.
- - **S7_LINE_FOLLOW:** Follow the track using sensor data.
- - **S8_REVERSE:** Reverse away from wall after collision.
- - **S9_TURN_TO_HEADING:** Adjust based on IMU heading.
- - **S10_DRIVE_TO_FINISH:** Use the IMU and encoder distance to make 3 straight segments and two turns before stopping
+- **S0_STANDBY:** Wait for user input. In this state we are waiting for the started flag and then transferring into line follow. 
+ - **S1_LINE_FOLLOW:** Follow the track using sensor data. Line follow until the diamond is reached. This is about 5000 encoder ticks. The encoder will update and count up with the driver until this number is reached. 
+ - **S2_STRAIGHT_DRIVE:** Move in a set direction. Then move for a set amount of encoder ticks until the diamond is passed. 
+ - **S3_LINE_FOLLOW:** Follow the track using sensor data. Through the curve, the dotted section, the larger curve, and through the lines. 
+- **S4_STRAIGHT_DRIVE:** Drive straight through the cage until a position 26 inches from the starting dot is reached. This will ensure that after turning the robot will be able to exit the gate.  
+ - **S4_TURN_TO_HEADING:** Turn to a set direction. Turn to a position 270 degrees from the starting position and aligned with the gates.  
+ - **S5_STRAIGHT_DRIVE:** Move straight for a small amount of encoder ticks to allow the line sensor to find the line. 
+ - **S7_LINE_FOLLOW:** Follow the track using sensor data toward the wall. 
+ - **S8_REVERSE:** Reverse away from wall after collision for an amount of encoder ticks where the cup is perfectly perpendicular from the center of Romi. 
+ - **S9_TURN_TO_HEADING:** Turn to the same heading as set in the initial starting state. 
+ - **S10_DRIVE_TO_FINISH:** Use the IMU and encoder distance to make 3 straight segments and two turns before stopping which will be hard coded in. 
+![image](https://github.com/user-attachments/assets/493b43d8-09ba-46a5-ab61-3681c30bc686)
+
 
 ### Course
 ![IMG_1577](https://github.com/user-attachments/assets/ec4ebac2-cb3e-47ae-a8a1-ab696d0dd84d)
