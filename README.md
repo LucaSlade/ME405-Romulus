@@ -17,6 +17,7 @@ The selected components listed below are the exact parts used to build Romulus.
    
 ### Reflectance Sensors
  - Medium Density, 8 pin, line sensor array for line detection. Placed at the front of Romi to ensure consistency
+(https://www.pololu.com/product/4248)
    
    ![image](https://github.com/user-attachments/assets/4e1546af-2b07-4769-b3ee-b79c8f58e74d)
 
@@ -26,12 +27,12 @@ The selected components listed below are the exact parts used to build Romulus.
     ![image](https://github.com/user-attachments/assets/f62a0d6f-61af-412b-a289-89edeebfb996)
 
 ### Bump Sensor
- - Bump sensors, left and right in arrays of 3
+ - Bump sensors, left and right in arrays of 3 (https://www.pololu.com/product/3674)
    
    ![IMG_1572](https://github.com/user-attachments/assets/b209eb08-c4de-4f03-b35a-a715138de331)
 
 ### Bluetooth
- - HC-05 for Bluetooth communication
+ - HC-05 for Bluetooth communication (
 
    ![image](https://github.com/user-attachments/assets/68cd8d92-45d1-43fa-b19d-d5c2a4f3f1bb)
 
@@ -95,7 +96,7 @@ Each piece listed above is individually implemented into a navigation task allow
 
 ## **Control Algorithms**
  - **Line Following**: Uses PID control to adjust motor speed based on sensor input.
- - **Heading Control**: IMU data is used to correct drift and maintain heading.
+ - **Heading Control**: IMU data is used to correct drift and maintain heading while spinning in place.
  - **Stright Drive**: Incorporates PID control to maintain a given direction and adjust accordingly while driving.
 
 ## **FSM Navigation Design**
