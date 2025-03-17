@@ -136,6 +136,18 @@ Each piece listed above is individually implemented into a navigation task allow
 ## Overall Code Structure
 - At the top we have our high level code which we use to create objects, tasks, and run the scheduler. Between is the Middle Level code which implements each generator function and uses the share information. At the low level is the code that interfaces with the hardware. This is where each driver is created.
 
+# Results
+
+Each individual task in this project was developed and tested independently to ensure proper functionality. The line-following, bump detection, IMU-based heading control, pre-programmed path execution, and motor control tasks all performed reliably in isolation. However, integrating them into a single cohesive system proved to be one of the most significant challenges of the project.
+
+One of the major difficulties was ensuring smooth state transitions within the finite state machine. While each task worked well individually, unpredictable interactions between them—such as delays in sensor readings, conflicts between line-following and pre-programmed movement, or inconsistent timing of bump sensor detections—often led to erratic robot behavior. Fine-tuning task priorities and execution timing was crucial to achieving a functional system.
+
+The PID controllers played a critical role in motor speed regulation and heading adjustments. Proportional Gain was the most reliable and effective, providing a steady and predictable correction. Integral Gain was highly sensitive and required very careful tuning. Even small changes often caused excessive oscillations or unintended drift. Derivative Gain was also challenging to tune, as it amplified noise from the sensors, making the system unstable in certain conditions. Ultimately, a P-dominant control strategy was found to be the best approach, with minimal contributions from I and D to prevent excessive corrections and instability.
+
+One of the most impactful discoveries was the significant impact of battery charge on performance and reliability. When the battery voltage was high, the robot moved faster and responded more predictably. However, as the charge decreased, the motors became sluggish, sensor readings varied more, and timing inconsistencies emerged—especially in tasks relying on precise movements, such as line-following and heading corrections. The varying power levels also altered the effectiveness of the PID controllers, requiring more frequent recalibrations than expected.
+
+Moving forward, a battery voltage monitoring system would be a valuable addition to automatically adjust motor effort and PID parameters based on available power.
+
 # **Challenges & Shortcomings**
  - Implementing Bluetooth: Since there was no common structure for how to incorporate Bluetooth communication, finding the path to successful wireless instruction took many hours of trial and error to find the right baudrate and UART channel. Even after proper configuration and setup, the module would only receive and write once every 20-30 minutes. Looking back avoiding Bluetooth overall would save much more time than the value that it provided.
  - IMU noise: The controller for the heading changes would often over saturate and rotate farther than desired. A solution was to implement filtering to stabilize readings, allowing the heading to have a small range instead of a single fixed value.
