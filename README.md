@@ -78,7 +78,7 @@ The selected components listed below are the exact parts used to build Romulus.
  - User Interface with a button for start/stop (`UI.py`)
 
 # Modular Structure
-Each piece listed above is individually implemented into a navigation task allowing for various combinations of obstacles to be overcame with ease along a specified course. This structure is essential for adaptability and larger tracks.
+Each piece listed above is individually implemented into a navigation task allowing for various combinations of obstacles to be overcome with ease along a specified course. This structure is essential for adaptability and larger tracks.
 
 ## **Motor and Encoder Control**
  - `Driver_Motors.py`: Handles PWM-based motor control.
@@ -141,11 +141,11 @@ Each piece listed above is individually implemented into a navigation task allow
 <img width="422" alt="Screenshot 2025-03-16 at 10 29 28 PM" src="https://github.com/user-attachments/assets/7203cbb0-4e1d-4429-857e-f85da27acb27" />
 
 # **Challenges & Shortcomings**
- - Implementing Bluetooth: Since there was no common structure for how to incorporate Bluetooth communicaiton, finding the path to successful wireless instruction took many hours of trial and error to find the right baurate and UART channel. Even after proper configuration and setup, the module would only recieve and write once every 20-30 minutes. Looking back avoiding bluetooth overall would save much more time than the value that it provided.
+ - Implementing Bluetooth: Since there was no common structure for how to incorporate Bluetooth communication, finding the path to successful wireless instruction took many hours of trial and error to find the right baudrate and UART channel. Even after proper configuration and setup, the module would only receive and write once every 20-30 minutes. Looking back avoiding Bluetooth overall would save much more time than the value that it provided.
  - IMU noise: The controller for the heading changes would often over saturate and rotate farther than desired. A solution was to implement filtering to stabilize readings, allowing the heading to have a small range instead of a single fixed value.
  - Task Timing: A rather large challenge was tuning the task period and priorities to ensure reliability and speed. If more time was permitted, this design would have had much more time efficient task periods to avoid tasks running late consistently.
- - Implementing Voltage Divider: Although a working voltage divider was bulit using 3 wires, a 15.2 kOhm, and a 7 kOhm resistor, there was not enough time to write the code to read the voltage readings directly from the batteries and incorporate this into a motor effort. This bypass allows for higher power efficiency allowing the rechargable batteries to be used for longer periods of time without a recharge.
- - Coordinate Tracking: If more time was permitted, a coordinate system to keep track of the location of Romulus in 2D space would aid in completing the course in the fewest amount of orientaion and straight path changes as possible. This would have been implemented with encoder and heading tracking.
+ - Implementing Voltage Divider: Although a working voltage divider was built using 3 wires, a 15.2 kOhm, and a 7 kOhm resistor, there was not enough time to write the code to read the voltage readings directly from the batteries and incorporate this into a motor effort. This bypass allows for higher power efficiency allowing the rechargeable batteries to be used for longer periods of time without a recharge.
+ - Coordinate Tracking: If more time was permitted, a coordinate system to keep track of the location of Romulus in 2D space would aid in completing the course in the fewest amount of orientation and straight path changes as possible. This would have been implemented with encoder and heading tracking.
 
 
 
