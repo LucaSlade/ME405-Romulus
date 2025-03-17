@@ -46,25 +46,26 @@ The selected components listed below are the exact parts used to build Romulus.
 ## Wiring
 
 ### Nucleo-L476RG Pin-Out
-![image](https://github.com/user-attachments/assets/250baf07-79b0-4780-84e8-6f89bf86171d)
+![image](https://github.com/user-attachments/assets/c99ff21e-69ee-4c86-9c41-ca0374ef0554)
 
 ### Motor and Encoder Pins
-![image](https://github.com/user-attachments/assets/2c45e61b-bb4c-4d6a-89c4-23920b8e9053)
+![image](https://github.com/user-attachments/assets/bf40cc08-10dc-46d4-9f17-839ccc3add1d)
 
 ### Reflectance Sensor Pins
-![image](https://github.com/user-attachments/assets/2da92e99-b044-467e-b2bb-782f3f70e007)
+![image](https://github.com/user-attachments/assets/9dcbb88e-57d0-45c5-9984-47b6caa1b1a4)
 
 ### IMU Sensor Pins
-![image](https://github.com/user-attachments/assets/4b04158b-2657-4a23-959a-5cfe711c6b10)
+![image](https://github.com/user-attachments/assets/e819c08f-241a-4fe8-9d49-252e000e962b)
 
 ### Bump Sensor Pins
-![image](https://github.com/user-attachments/assets/0ce539a6-58db-4914-85f8-ee32f7889f16)
+![image](https://github.com/user-attachments/assets/da58d381-31b4-48a6-8f8b-5fbec43da63b)
 
 ### Bluetooth Pins
-![image](https://github.com/user-attachments/assets/e11def94-a200-46a9-830d-0a0a98d7bece)
+![image](https://github.com/user-attachments/assets/f47b0679-5dfb-4168-9fd3-4f8072a4b637)
 
 ### Voltage Divider Pins
-![image](https://github.com/user-attachments/assets/213d3674-e88d-49a8-b8e2-58be6e86d568)
+![image](https://github.com/user-attachments/assets/2343a4bd-07c2-4d5c-b4ba-65d58d46c4fc)
+
 
 ## Software
 
