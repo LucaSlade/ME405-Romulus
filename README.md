@@ -98,12 +98,16 @@ Each piece listed above is individually implemented into a navigation task allow
  - **Bump Handling**: If a collision is detected, the robot stops and reorients.
 
 ## **FSM Navigation Design**
- - **STANDBY:** Wait for user input.
- - **LINE_FOLLOW:** Follow the track using sensor data.
- - **TURN_TO_HEADING:** Adjust based on IMU heading.
- - **DRIVE_TO_HEADING:** Move in a set direction.
- - **BUMP_RECOVERY:** Reverse and reorient if collision detected.
- - **PREPROGRAMMED_PATH:** Execute a predefined movement sequence.
+ - **S0_STANDBY:** Wait for user input.
+ - **S1_LINE_FOLLOW:** Follow the track using sensor data.
+ - **S2_STRAIGHT_DRIVE:** Move in a set direction.
+ - **S3_LINE_FOLLOW:** Follow the track using sensor data.
+ - **S5_TURN_TO_HEADING:** Turn to a set direction.
+ - **S6_STRAIGHT_DRIVE:** Move in a set direction.
+ - **S7_LINE_FOLLOW:** Follow the track using sensor data.
+ - **S8_REVERSE:** Reverse away from wall after collision.
+ - **S9_TURN_TO_HEADING:** Adjust based on IMU heading.
+ - **S10_DRIVE_TO_FINISH:** Use the IMU and encoder distance to make 3 straight segments and two turns before stopping
 
 ### Course
 ![IMG_1577](https://github.com/user-attachments/assets/ec4ebac2-cb3e-47ae-a8a1-ab696d0dd84d)
