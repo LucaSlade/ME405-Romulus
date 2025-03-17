@@ -69,15 +69,6 @@ The selected components listed below are the exact parts used to build Romulus.
 
 ## Software
 
-### Tasks
-
- - Real-Time Task Scheduling using (`cotask.py`)
- - FSM-Based Navigation managed by (`Thinker.py`)
- - Motor Control System (`Task_MotorController.py`)
- - Pre-programmed Path Execution (`PreProgPath.py`)
- - IMU and Sensor Fusion (`BNO055_Task.py`)
- - User Interface with a button for start/stop (`UI.py`)
-
 # Modular Structure
 Each piece listed above is individually implemented into a navigation task allowing for various combinations of obstacles to be overcome with ease along a specified course. This structure is essential for adaptability and larger tracks.
 
