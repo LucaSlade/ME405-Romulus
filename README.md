@@ -107,8 +107,7 @@ Each piece listed above is individually implemented into a navigation task allow
  - **S8_REVERSE:** Reverse away from wall after collision for an amount of encoder ticks where the cup is perfectly perpendicular from the center of Romi. 
  - **S9_TURN_TO_HEADING:** Turn to the same heading as set in the initial starting state. 
  - **S10_DRIVE_TO_FINISH:** Use the IMU and encoder distance to make 3 straight segments and two turns before stopping which will be hard coded in.
-   
-![image](https://github.com/user-attachments/assets/493b43d8-09ba-46a5-ab61-3681c30bc686)
+
 
 
 ### Course
