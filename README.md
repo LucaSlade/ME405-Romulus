@@ -10,7 +10,9 @@ The selected components listed below are the exact parts used to build Romulus.
  - Polulu Romi Chassis (https://www.pololu.com/product/3543) with 2 DC motors and quadrature encoders on a Power Distribution Board (https://www.pololu.com/category/202/romi-chassis-and-accessories)
    
    ![image](https://github.com/user-attachments/assets/b956889f-ea22-409b-a902-341a7f98214e)
+   
    ![image](https://github.com/user-attachments/assets/d46982f6-1200-4fad-9ba3-adbe45e9ad82)
+   
    ![image](https://github.com/user-attachments/assets/4d4acbbf-08e0-495b-ae4f-8ddb10b1f286)
    
 ### Reflectance Sensors
@@ -69,7 +71,6 @@ The selected components listed below are the exact parts used to build Romulus.
 
  - Real-Time Task Scheduling using (`cotask.py`)
  - FSM-Based Navigation managed by (`Thinker.py`)
- - PID Controller for closed loop control (`PIDController.py`)
  - Motor Control System (`Task_MotorController.py`)
  - Pre-programmed Path Execution (`PreProgPath.py`)
  - IMU and Sensor Fusion (`BNO055_Task.py`)
@@ -95,7 +96,7 @@ Each piece listed above is individually implemented into a navigation task allow
 ## **Control Algorithms**
  - **Line Following**: Uses PID control to adjust motor speed based on sensor input.
  - **Heading Control**: IMU data is used to correct drift and maintain heading.
- - **Bump Handling**: If a collision is detected, the robot stops and reorients.
+ - **Stright Drive**: Incorporates PID control to maintain a given direction and adjust accordingly while driving.
 
 ## **FSM Navigation Design**
 
@@ -115,6 +116,7 @@ Each piece listed above is individually implemented into a navigation task allow
 
 ### Course
 ![IMG_1577](https://github.com/user-attachments/assets/ec4ebac2-cb3e-47ae-a8a1-ab696d0dd84d)
+
 ![IMG_35240B1DF5D7-1](https://github.com/user-attachments/assets/fad4090d-a99d-4e4f-ba21-e95bcbf206b2)
 
 # Reference Diagrams
@@ -141,12 +143,14 @@ Each piece listed above is individually implemented into a navigation task allow
  - Implementing Bluetooth: Since there was no common structure for how to incorporate Bluetooth communicaiton, finding the path to successful wireless instruction took many hours of trial and error to find the right baurate and UART channel. Even after proper configuration and setup, the module would only recieve and write once every 20-30 minutes. Looking back avoiding bluetooth overall would save much more time than the value that it provided.
  - IMU noise: The controller for the heading changes would often over saturate and rotate farther than desired. A solution was to implement filtering to stabilize readings, allowing the heading to have a small range instead of a single fixed value.
  - Task Timing: A rather large challenge was tuning the task period and priorities to ensure reliability and speed. If more time was permitted, this design would have had much more time efficient task periods to avoid tasks running late consistently.
- - Implementing Voltage Divider: Did not have enough time to write the code to read the voltage readings directly from the batteries and incorporate this into a motor effort. This bypass allows for higher power efficiency allowing the rechargable batteries to be used for longer periods of time without a recharge.
+ - Implementing Voltage Divider: Although a working voltage divider was bulit using 3 wires, a 15.2 kOhm, and a 7 kOhm resistor, there was not enough time to write the code to read the voltage readings directly from the batteries and incorporate this into a motor effort. This bypass allows for higher power efficiency allowing the rechargable batteries to be used for longer periods of time without a recharge.
+ - Coordinate Tracking: If more time was permitted, a coordinate system to keep track of the location of Romulus in 2D space would aid in completing the course in the fewest amount of orientaion and straight path changes as possible. This would have been implemented with encoder and heading tracking.
 
 
 
 # Red Carpet
 ![IMG_1585](https://github.com/user-attachments/assets/eea66b2e-44d2-42e8-b5b0-49359c76650b)
+
 ![IMG_1581](https://github.com/user-attachments/assets/388108d3-37fd-46db-a0b2-8a54390434bc)
 
 
