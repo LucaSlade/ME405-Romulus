@@ -98,6 +98,10 @@ Each piece listed above is individually implemented into a navigation task allow
  - **Bump Handling**: If a collision is detected, the robot stops and reorients.
 
 ## **FSM Navigation Design**
+
+<img width="1199" alt="PNG image" src="https://github.com/user-attachments/assets/ce47362c-863d-499f-821f-1660cbe8d39f" />
+
+
  - **S0_STANDBY:** Wait for user input.
  - **S1_LINE_FOLLOW:** Follow the track using sensor data.
  - **S2_STRAIGHT_DRIVE:** Move in a set direction.
