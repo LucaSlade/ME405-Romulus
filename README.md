@@ -32,7 +32,7 @@ The selected components listed below are the exact parts used to build Romulus.
    ![IMG_1572](https://github.com/user-attachments/assets/b209eb08-c4de-4f03-b35a-a715138de331)
 
 ### Bluetooth
- - HC-05 for Bluetooth communication (
+ - HC-05 for Bluetooth communication
 
    ![image](https://github.com/user-attachments/assets/68cd8d92-45d1-43fa-b19d-d5c2a4f3f1bb)
 
