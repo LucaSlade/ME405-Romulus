@@ -79,6 +79,7 @@ Each piece listed above is individually implemented into a navigation task allow
 ### Course
 ![IMG_1577](https://github.com/user-attachments/assets/ec4ebac2-cb3e-47ae-a8a1-ab696d0dd84d)
 
+![IMG_35240B1DF5D7-1](https://github.com/user-attachments/assets/793885f0-35d1-4f28-8e4f-16c81db86cde)
 
 # **Challenges & Shortcomings**
  - Implementing Bluetooth: Since there was no common structure for how to incorporate Bluetooth communicaiton, finding the path to successful wireless instruction took many hours of trial and error to find the right baurate and UART channel.
