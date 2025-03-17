@@ -115,6 +115,7 @@ Each piece listed above is individually implemented into a navigation task allow
 
 ### Course
 ![IMG_1577](https://github.com/user-attachments/assets/ec4ebac2-cb3e-47ae-a8a1-ab696d0dd84d)
+![IMG_35240B1DF5D7-1](https://github.com/user-attachments/assets/fad4090d-a99d-4e4f-ba21-e95bcbf206b2)
 
 # Reference Diagrams
 
