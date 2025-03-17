@@ -123,14 +123,19 @@ Each piece listed above is individually implemented into a navigation task allow
 <img width="811" alt="Task_Diagram" src="https://github.com/user-attachments/assets/8115b79a-1323-4171-b656-9068fde3d2c9" />
 
 ## Thinker FSM
+<img width="1214" alt="Screenshot 2025-03-16 at 10 28 48 PM" src="https://github.com/user-attachments/assets/9d4ce456-eced-40c8-b4fb-1bec9b4714c5" />
 
 ## Line Follower FSM
+<img width="522" alt="Screenshot 2025-03-16 at 10 29 05 PM" src="https://github.com/user-attachments/assets/7d9ad0bc-4038-449d-bea9-f31b16e1efad" />
 
 ## BNO055 FSM
+<img width="594" alt="Screenshot 2025-03-16 at 10 29 15 PM" src="https://github.com/user-attachments/assets/fe8ef6e2-0174-4da8-b37d-abd7eed438c3" />
 
 ## Bump Sensor FSM
+<img width="493" alt="Screenshot 2025-03-16 at 10 29 22 PM" src="https://github.com/user-attachments/assets/dbbba814-2c71-4e80-88df-b18e766a13f9" />
 
 ## Motor Controller FSM
+<img width="422" alt="Screenshot 2025-03-16 at 10 29 28 PM" src="https://github.com/user-attachments/assets/7203cbb0-4e1d-4429-857e-f85da27acb27" />
 
 # **Challenges & Shortcomings**
  - Implementing Bluetooth: Since there was no common structure for how to incorporate Bluetooth communicaiton, finding the path to successful wireless instruction took many hours of trial and error to find the right baurate and UART channel.
