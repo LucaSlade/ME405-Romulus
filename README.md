@@ -96,7 +96,7 @@ Each piece listed above is individually implemented into a navigation task allow
 <img width="1199" alt="PNG image" src="https://github.com/user-attachments/assets/ce47362c-863d-499f-821f-1660cbe8d39f" />
 
 
- - **S0_STANDBY:** Wait for user input.
+ - **S0_STANDBY:** Wait for user input. 
  - **S1_LINE_FOLLOW:** Follow the track using sensor data.
  - **S2_STRAIGHT_DRIVE:** Move in a set direction.
  - **S3_LINE_FOLLOW:** Follow the track using sensor data.
@@ -110,6 +110,7 @@ Each piece listed above is individually implemented into a navigation task allow
 ### Course
 ![IMG_1577](https://github.com/user-attachments/assets/ec4ebac2-cb3e-47ae-a8a1-ab696d0dd84d)
 
+- The image below contains the information of the states that we hoped to follow. 
 ![IMG_35240B1DF5D7-1](https://github.com/user-attachments/assets/fad4090d-a99d-4e4f-ba21-e95bcbf206b2)
 
 # Reference Diagrams
