@@ -141,7 +141,7 @@ Each piece listed above is individually implemented into a navigation task allow
 <img width="422" alt="Screenshot 2025-03-16 at 10 29 28 PM" src="https://github.com/user-attachments/assets/7203cbb0-4e1d-4429-857e-f85da27acb27" />
 
 ## Overall Code Structure
-- At the top we have our high level code which we use to create objects, tasks, and run the scheduler. Between is the Middle Level code which implements each generator function and uses the share information. At the low level is the code that interfaces with the hardware. This is where each driver is created
+- At the top we have our high level code which we use to create objects, tasks, and run the scheduler. Between is the Middle Level code which implements each generator function and uses the share information. At the low level is the code that interfaces with the hardware. This is where each driver is created.
 
 # **Challenges & Shortcomings**
  - Implementing Bluetooth: Since there was no common structure for how to incorporate Bluetooth communication, finding the path to successful wireless instruction took many hours of trial and error to find the right baudrate and UART channel. Even after proper configuration and setup, the module would only receive and write once every 20-30 minutes. Looking back avoiding Bluetooth overall would save much more time than the value that it provided.
