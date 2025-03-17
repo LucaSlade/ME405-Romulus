@@ -8,31 +8,60 @@ The selected components listed below are the exact parts used to build Romulus.
 
 ### Bare Chassis
  - Polulu Romi Chassis (https://www.pololu.com/product/3543) with 2 DC motors and quadrature encoders on a Power Distribution Board (https://www.pololu.com/category/202/romi-chassis-and-accessories)
+   
    ![image](https://github.com/user-attachments/assets/b956889f-ea22-409b-a902-341a7f98214e)
    ![image](https://github.com/user-attachments/assets/d46982f6-1200-4fad-9ba3-adbe45e9ad82)
    ![image](https://github.com/user-attachments/assets/4d4acbbf-08e0-495b-ae4f-8ddb10b1f286)
    
 ### Reflectance Sensors
- - Medium Density, 8 pin, line sensor array for line detection. Placed at the front of Romi to 
+ - Medium Density, 8 pin, line sensor array for line detection. Placed at the front of Romi to ensure consistency
+   
    ![image](https://github.com/user-attachments/assets/4e1546af-2b07-4769-b3ee-b79c8f58e74d)
 
 ### IMU Sensor
  - BNO055 IMU for magnetometer, accelerometer, and gyroscope
-   ![image](https://github.com/user-attachments/assets/f62a0d6f-61af-412b-a289-89edeebfb996)
+
+    ![image](https://github.com/user-attachments/assets/f62a0d6f-61af-412b-a289-89edeebfb996)
 
 ### Bump Sensor
- - Bump sensors, left and right
+ - Bump sensors, left and right in arrays of 3
+   
    ![IMG_1572](https://github.com/user-attachments/assets/b209eb08-c4de-4f03-b35a-a715138de331)
 
 ### Bluetooth
  - HC-05 for Bluetooth communication
+
    ![image](https://github.com/user-attachments/assets/68cd8d92-45d1-43fa-b19d-d5c2a4f3f1bb)
 
 ### Microcontroller
  - Nucleo STM32L467RG using Micropython in conjunction with Shoe of Brian to provide ntaive USB port for use with Micropython code.
+   
    ![IMG_1574](https://github.com/user-attachments/assets/9b4dd78d-4063-4082-88b0-de0faad976a4)
 
-<img width="811" alt="Task_Diagram" src="https://github.com/user-attachments/assets/8115b79a-1323-4171-b656-9068fde3d2c9" />
+
+
+## Wiring
+
+### Nucleo-L476RG Pin-Out
+![image](https://github.com/user-attachments/assets/250baf07-79b0-4780-84e8-6f89bf86171d)
+
+### Motor and Encoder Pins
+![image](https://github.com/user-attachments/assets/2c45e61b-bb4c-4d6a-89c4-23920b8e9053)
+
+### Reflectance Sensor Pins
+![image](https://github.com/user-attachments/assets/2da92e99-b044-467e-b2bb-782f3f70e007)
+
+### IMU Sensor Pins
+![image](https://github.com/user-attachments/assets/4b04158b-2657-4a23-959a-5cfe711c6b10)
+
+### Bump Sensor Pins
+![image](https://github.com/user-attachments/assets/0ce539a6-58db-4914-85f8-ee32f7889f16)
+
+### Bluetooth Pins
+![image](https://github.com/user-attachments/assets/e11def94-a200-46a9-830d-0a0a98d7bece)
+
+### Voltage Divider Pins
+![image](https://github.com/user-attachments/assets/213d3674-e88d-49a8-b8e2-58be6e86d568)
 
 ## Software
 
@@ -79,7 +108,20 @@ Each piece listed above is individually implemented into a navigation task allow
 ### Course
 ![IMG_1577](https://github.com/user-attachments/assets/ec4ebac2-cb3e-47ae-a8a1-ab696d0dd84d)
 
-![IMG_35240B1DF5D7-1](https://github.com/user-attachments/assets/793885f0-35d1-4f28-8e4f-16c81db86cde)
+# Reference Diagrams
+
+## Task Diagram
+<img width="811" alt="Task_Diagram" src="https://github.com/user-attachments/assets/8115b79a-1323-4171-b656-9068fde3d2c9" />
+
+## Thinker FSM
+
+## Line Follower FSM
+
+## BNO055 FSM
+
+## Bump Sensor FSM
+
+## Motor Controller FSM
 
 # **Challenges & Shortcomings**
  - Implementing Bluetooth: Since there was no common structure for how to incorporate Bluetooth communicaiton, finding the path to successful wireless instruction took many hours of trial and error to find the right baurate and UART channel.
@@ -108,7 +150,7 @@ Each piece listed above is individually implemented into a navigation task allow
 4. Run the script and press the **Blue Button** to start.
 
 ### **Dependencies**
-- **MicroPython** installed on STM32.
+- **MicroPython** installed on Nucleo board.
 - **GitHub Pages / ReadTheDocs** for documentation.
 
 # **Project Repository Structure**
@@ -129,14 +171,16 @@ Each piece listed above is individually implemented into a navigation task allow
 ├── task_share.py
 ├── BNO055_Task.py
 ├── cqueue.py
-├── shared.py
 ├── boot.py
 ├── main.py
 └── README.md
 ```
-- GitHub Repository URL: (https://github.com/LucaSlade/ME405-Romulus.git)
+- GitHub Repository URL:
+  
+  (https://github.com/LucaSlade/ME405-Romulus.git)
 
 ---
 **Developers:** Luca Sladavic & Aiden Theocheung 
+
 *ME405 - Winter 2025*
 
