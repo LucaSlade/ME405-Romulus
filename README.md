@@ -32,6 +32,7 @@ The selected components listed below are the exact parts used to build Romulus.
  - Nucleo STM32L467RG using Micropython in conjunction with Shoe of Brian to provide ntaive USB port for use with Micropython code.
    ![IMG_1574](https://github.com/user-attachments/assets/9b4dd78d-4063-4082-88b0-de0faad976a4)
 
+<img width="811" alt="Task_Diagram" src="https://github.com/user-attachments/assets/8115b79a-1323-4171-b656-9068fde3d2c9" />
 
 ## Software
 
