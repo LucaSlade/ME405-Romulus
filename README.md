@@ -46,6 +46,7 @@ The selected components listed below are the exact parts used to build Romulus.
 ## Wiring
 
 ### Nucleo-L476RG Pin-Out
+- Pins in Red are off-limits for assignment as they are used for other functionality
 ![image](https://github.com/user-attachments/assets/c99ff21e-69ee-4c86-9c41-ca0374ef0554)
 
 ### Motor and Encoder Pins
